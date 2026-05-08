@@ -1,8 +1,8 @@
 {
   "meta": {
-    "version": "1.0.0",
+    "version": "1.1.0",
     "schema_version": "1.0.0",
-    "last_updated": "2026-02-13",
+    "last_updated": "2026-05-07",
     "repository": "https://github.com/wyrdness/upyr",
     "maintainers": [
       {
@@ -16,72 +16,165 @@
       "content": "CC-BY-4.0"
     }
   },
+
   "phenomenon": {
     "id": "upyr",
-    "name": "Upyr - The Slavic Vampire",
-    "aliases": [],
+    "name": "Upyr",
+    "aliases": [
+      { "name": "Upiór", "language": "Polish", "region": "Poland and Ukraine" },
+      { "name": "Upir", "language": "Old East Slavic", "region": "Kievan Rus'" },
+      { "name": "Упырь (Upyr')", "language": "Russian" },
+      { "name": "Упир (Upyr)", "language": "Ukrainian" },
+      { "name": "Wąpierz / Wampir", "language": "Polish" },
+      { "name": "Wieszczy", "language": "Polish (Kashubian)", "region": "Pomerania" },
+      { "name": "Vampir", "language": "Serbian/Bulgarian", "meaning": "borrowing source for English 'vampire'" }
+    ],
     "category": "UNDEAD",
-    "subcategory": "Unknown",
+    "subcategory": "Slavic vampire",
     "tags": [
-      "folklore",
-      "mythology"
+      "vampire",
+      "slavic",
+      "undead",
+      "eastern-europe",
+      "revenant",
+      "blood-drinking",
+      "folklore"
     ],
     "status": "documented",
     "description": {
-      "summary": "The **upyr** (also spelled *upir*, *upior*, or *wampir*) is an ancient Slavic undead creature that serves as the direct precursor to the modern Western vampire.",
-      "full": "The **upyr** (also spelled *upir*, *upior*, or *wampir*) is an ancient Slavic undead creature that serves as the direct precursor to the modern Western vampire. Originating in Eastern European folklore centuries before Bram Stoker's Dracula, the upyr represents one of humanity's oldest documented beliefs in the returning dead. Unlike the romanticized vampires of popular culture, traditional upyri were bloated, ruddy corpses that terrorized villages by draining blood and life force from the living. The word \\\"upyr\\\" first appeared in written form in 1047 CE in a manuscript referring to a Russian prince as \\\"Upir Lichy\\\" (Wicked Vampire), making it one of the earliest documented uses of vampire terminology. These creatures were believed to rise from their graves at night to prey upon family members, livestock, and entire communities, spreading disease and death in their wake."
+      "summary": "The upyr is the Slavic revenant or blood-drinking undead from which the modern Western 'vampire' concept is descended; a corpse that rises from the grave to attack family, livestock, and community.",
+      "full": "Upyr (Old East Slavic упырь; Polish upiór, wąpierz; Ukrainian упир; Russian упырь) is the Slavic name for a class of revenant — a person who, after death, rises from the grave to feed on the living. The earliest known attestation of the word in writing is the Old East Slavic text colophon of the so-called 'Book of Prophets', dated 1047, which names a scribe 'Upir' Lichyj' ('the Wicked Upir'). The 11th–13th-century anti-pagan homily Slovo svyatogo Grigoriya ('Word of Saint Grigoriy') condemns Slavs who 'sacrifice to upyri'. The traditional folkloric upyr is not the pale aristocratic vampire of 19th-century literature but a bloated, ruddy corpse with long fingernails and matted hair, drinking the blood of relatives and spreading disease. Many anti-vampire practices recorded by ethnographers — staking the body, decapitation, prone (face-down) burial, placing iron, garlic, hawthorn, or poppy seeds in the grave, and burning the corpse — are documented archaeologically in Slavic 'deviant burials' from the medieval to early modern periods. The 18th-century 'vampire epidemics' of Habsburg Serbia (notably the Petar Blagojević and Arnold Paole cases of the 1720s–30s) carried the Serbian vampir into German and English news reports, giving the modern Western world its word for the creature."
     },
     "etymology": {
-      "origin": "Unknown",
-      "meaning": "To be documented",
-      "first_use": "Unknown"
+      "origin": "Proto-Slavic *ǫpyrь / *ǫpirь, of debated origin. Major hypotheses: a native Slavic root linked either to 'to thrust / to bite' or to a privative form ('not burned'); alternatively a Turkic loan from a word group including ubir / ubyr meaning 'witch, vampire' attested in Tatar and other Turkic languages.",
+      "meaning": "Disputed; commonly glossed as 'biter', 'thruster', or via the Turkic borrowing 'witch / blood-drinker'.",
+      "first_use": "Old East Slavic 'Upir' Lichyj' colophon (1047 CE); 'Slovo svyatogo Grigoriya' (11th–13th centuries)"
     }
   },
+
   "classification": {
     "taxonomy": {
       "category": "UNDEAD",
-      "type": "Unknown",
-      "subtype": "Unknown",
-      "variant": "Unknown"
+      "type": "Revenant",
+      "subtype": "Blood-drinking corpse",
+      "variant": "Slavic"
     },
-    "related_phenomena": []
+    "related_phenomena": [
+      { "id": "vampires", "name": "Vampire (modern Western literary)", "relationship": "subset", "description": "The modern Western vampire descends directly from Slavic upyr / vampir traditions via 18th-century Habsburg-Serbian cases" },
+      { "id": "strigoi", "name": "Strigoi", "relationship": "similar", "description": "Romanian undead/revenant tradition closely related to the upyr" },
+      { "id": "vrykolakas", "name": "Vrykolakas", "relationship": "similar", "description": "Greek revenant tradition; the term itself is a Slavic loan" },
+      { "id": "shtriga", "name": "Shtriga", "relationship": "similar", "description": "Albanian witch-vampire" },
+      { "id": "vourdalak", "name": "Vourdalak / Wurdulac", "relationship": "regional_variant", "description": "Russian literary variant popularized by Tolstoy's 'The Family of the Vourdalak'" },
+      { "id": "nachzehrer", "name": "Nachzehrer", "relationship": "similar", "description": "German revenant who consumes their own shroud and family from the grave" }
+    ]
   },
+
   "characteristics": {
     "physical": {
-      "features": [],
-      "morphology": "See README.md for detailed physical description"
+      "coloration": ["ruddy", "purplish", "dark", "bloated", "blood-tinged"],
+      "features": [
+        { "feature": "Bloated, ruddy corpse", "description": "Far from the pale literary vampire, the folkloric upyr is described as bloated and dark-faced — a description consistent with the appearance of a normally decomposing buried body", "frequency": "common" },
+        { "feature": "Long fingernails and hair", "description": "Long nails and matted hair, often interpreted by modern observers as continued post-mortem growth (an illusion of skin retraction)", "frequency": "common" },
+        { "feature": "Fresh blood at the mouth", "description": "Blood at the mouth of the exhumed corpse, taken as evidence of recent feeding", "frequency": "common" },
+        { "feature": "Lack of decomposition", "description": "The body is reported to be uncorrupted long after death; feet, eyes, or limbs may move when staked", "frequency": "common" },
+        { "feature": "Distinguishing birth-marks (in life)", "description": "In life, those suspected of becoming upyri were often distinguished by red hair, left-handedness, a unibrow, an extra nipple, a caul at birth, or a double row of teeth", "frequency": "occasional" }
+      ],
+      "morphology": "Reanimated human corpse; in some traditions roams as an apparently living person but with the diagnostic stigmata above."
     },
-    "abilities": [],
+    "abilities": [
+      { "ability": "Blood-drinking", "description": "Drinks the blood of family members, neighbors, and livestock, often appearing to victims as in a nightmare", "frequency": "always", "evidence_level": "folklore" },
+      { "ability": "Disease-spreading", "description": "Implicated in epidemics, especially tuberculosis ('consumption') outbreaks in which whole families wasted away", "frequency": "common", "evidence_level": "folklore" },
+      { "ability": "Daylight activity", "description": "Unlike the 19th-century literary vampire, the folkloric upyr was often reported active by day as well as by night", "frequency": "common", "evidence_level": "folklore" },
+      { "ability": "Killing by breath or shriek", "description": "Some traditions ascribe to the upyr a deadly shriek or breath that strikes down victims", "frequency": "occasional", "evidence_level": "folklore" }
+    ],
     "behavior": {
-      "activity_period": "unknown",
-      "disposition": "unknown",
-      "habitat_preference": []
+      "activity_period": "variable",
+      "disposition": "aggressive",
+      "social_structure": "solitary",
+      "habitat_preference": [
+        "graveyards",
+        "the upyr's own home village",
+        "household at night",
+        "agricultural fields and pastures (livestock attacks)"
+      ],
+      "diet": "Folkloric: blood and life-force of human family members and livestock.",
+      "patterns": [
+        "Returns first to attack close family members and former neighbors",
+        "Linked epidemiologically with outbreaks of unexplained wasting illness",
+        "Provoked or created by improper burial, suicide, sudden death, lack of baptism, or having been a sorcerer or witch in life",
+        "Repelled by garlic, hawthorn, iron, holy water, the cross, and poppy seeds (which the upyr is compelled to count)"
+      ]
     }
   },
+
   "distribution": {
     "range": {
-      "description": "Unknown",
-      "continents": [],
-      "countries": [],
-      "regions": []
+      "description": "Upyr traditions are found across the Slavic world and adjacent regions, from East Slavic (Russian, Ukrainian, Belarusian) through West Slavic (Polish, Czech, Slovak, Sorbian) to South Slavic (Serbian, Bulgarian, Macedonian) cultures. Closely related traditions exist among Romanians (strigoi), Greeks (vrykolakas), Albanians (shtriga), and Turkic-speaking peoples (ubir).",
+      "continents": ["Europe"],
+      "countries": ["Russia", "Ukraine", "Belarus", "Poland", "Czech Republic", "Slovakia", "Serbia", "Bulgaria", "North Macedonia", "Romania", "Slovenia"],
+      "regions": [
+        "East Slavic Rus'",
+        "Polish-Lithuanian Commonwealth lands",
+        "Habsburg Military Frontier (18th-century vampire-epidemic zone)",
+        "Balkans"
+      ]
     },
-    "hotspots": [],
+    "hotspots": [
+      {
+        "name": "Habsburg Military Frontier (Serbia)",
+        "location": {
+          "description": "Serbian villages on the Habsburg–Ottoman frontier where 1720s–30s vampire investigations occurred",
+          "country": "Serbia",
+          "region": "Habsburg Military Frontier"
+        },
+        "peak_period": "1720s–1730s",
+        "notes": "Site of the Petar Blagojević (1725) and Arnold Paole (1731–32) cases that introduced the Serbian word 'vampir' to Western Europe."
+      },
+      {
+        "name": "Kievan Rus' / East Slavic territories",
+        "location": {
+          "description": "Heartlands of medieval East Slavic culture",
+          "country": "Russia / Ukraine",
+          "region": "Eastern Europe"
+        },
+        "peak_period": "11th–13th centuries",
+        "notes": "Earliest written attestations of the upyr concept ('Upir' Lichyj' colophon, 1047; Slovo svyatogo Grigoriya)."
+      }
+    ],
     "temporal": {
       "first_recorded": {
-        "date": "Unknown",
+        "date": "1047-01-01",
         "circa": true,
-        "source": "Traditional folklore"
-      }
+        "source": "Colophon of an Old East Slavic 'Book of Prophets' naming the scribe 'Upir' Lichyj' ('the Wicked Upir')"
+      },
+      "peak_activity_periods": [
+        { "period": "11th–13th centuries", "description": "Earliest written attestations of upyr / upir' in Old East Slavic and Old Church Slavonic texts" },
+        { "period": "1720s–1730s", "description": "Habsburg-Serbian 'vampire epidemic'; Petar Blagojević (1725) and Arnold Paole (1731–32) cases enter Western European print" },
+        { "period": "1755–1772", "description": "Empress Maria Theresa, advised by her physician Gerard van Swieten, prohibits anti-vampire exhumations and decapitations in the Habsburg lands" }
+      ],
+      "seasonal_patterns": "Vampire scares often clustered with epidemic outbreaks (especially tuberculosis) and with periods of social and religious disruption."
     }
   },
+
   "history": {
     "origins": {
-      "cultural_roots": "Unknown",
-      "earliest_accounts": "See README.md for historical details",
-      "folklore_connections": "Unknown"
+      "cultural_roots": "Pre-Christian Slavic beliefs about the dangerous dead, refracted after the Christianization of the Slavs through Orthodox and Catholic frameworks; influenced by, and in turn influencing, Romanian, Greek, German, and Turkic traditions.",
+      "earliest_accounts": "1047 colophon of an Old East Slavic 'Book of Prophets' written for Prince Vladimir Yaroslavich of Novgorod, naming the scribe 'Upir' Lichyj' ('the Wicked Upir'). The 11th–13th-century anti-pagan homily Slovo svyatogo Grigoriya condemns Slavs who 'sacrifice to upyri'.",
+      "folklore_connections": "Closely tied to the Romanian strigoi, Greek vrykolakas, Albanian shtriga, and German nachzehrer; the modern Western literary vampire is a direct descendant."
     },
-    "timeline": []
+    "timeline": [
+      { "date": "1047-01-01", "event": "Colophon of an Old East Slavic 'Book of Prophets' identifies the scribe as 'Upir' Lichyj' — the earliest known written use of the upyr word", "significance": "Foundational lexical attestation", "source": "1047 'Upir' Lichyj' colophon (per Wikipedia: Upiór and standard Slavic philology)" },
+      { "date": "1100-01-01", "event": "Slovo svyatogo Grigoriya, an Old Church Slavonic anti-pagan homily, condemns Slavic offerings to 'upyri and beregyni' (water/forest spirits)", "significance": "First clear evidence of upyr as a religious-folkloric concept", "source": "Slovo svyatogo Grigoriya (11th–13th centuries)" },
+      { "date": "1725-01-01", "event": "Habsburg authorities investigate the case of Petar Blagojević, a peasant of Kisilova, Serbia, who allegedly returned from the grave and killed nine villagers", "significance": "First major Habsburg vampire-investigation report; introduces 'vampyri' to German-language press", "source": "Wienerisches Diarium / Frombald report (1725)" },
+      { "date": "1732-01-01", "event": "Habsburg medical commission report Visum et Repertum documents the Arnold Paole case at Medveđa, Serbia, in detail", "significance": "Becomes a sensation in Western European newspapers and inaugurates Enlightenment debate over vampires", "source": "Visum et Repertum (1732)" },
+      { "date": "1746-01-01", "event": "Augustin Calmet publishes Dissertations sur les apparitions des esprits, et sur les vampires ou les revenans, the first major scholarly study of the vampire phenomenon", "significance": "Crucial early synthesis", "source": "Calmet, A. (1746)" },
+      { "date": "1755-01-01", "event": "Empress Maria Theresa, advised by her physician Gerard van Swieten, restricts anti-vampire exhumations and decapitations in the Habsburg lands", "significance": "Enlightenment closure of the official European vampire epidemic", "source": "Habsburg edicts and van Swieten's 1755 'Discourse on the Existence of Ghosts'" },
+      { "date": "1819-01-01", "event": "John Polidori publishes 'The Vampyre', the first English-language vampire short story", "significance": "Literary transition from folkloric upyr to aristocratic vampire", "source": "Polidori, J. W. (1819)" },
+      { "date": "1897-01-01", "event": "Bram Stoker publishes Dracula, fixing the modern Western literary vampire", "significance": "Final canonical literary form", "source": "Stoker, B. (1897)" }
+    ],
+    "modern_era": "Folkloric upyr beliefs persisted in rural Slavic communities into the 20th century. Archaeology since the 1990s has documented numerous medieval and early modern Slavic 'deviant burials' with iron stakes, sickles across the throat, decapitation, and other anti-revenant measures, providing material confirmation of the practices described in folklore."
   },
+
   "sightings": {
     "statistics": {
       "total_documented": 0,
@@ -89,38 +182,222 @@
       "disputed": 0,
       "debunked": 0
     },
-    "notable": [],
+    "notable": [
+      {
+        "id": "upyr-blagojevic-1725",
+        "name": "Petar Blagojević case",
+        "date": { "value": "1725-07-01", "precision": "approximate" },
+        "location": {
+          "description": "Village of Kisilova (Kisiljevo), Habsburg Military Frontier, Serbia",
+          "country": "Serbia (then Habsburg Monarchy)",
+          "region": "Braničevo"
+        },
+        "witnesses": { "count": 0, "types": ["Habsburg imperial provisor (Frombald)", "Local villagers"], "credibility_factors": ["Documented in an official Habsburg report and the Wienerisches Diarium"] },
+        "description": "Petar Blagojević, a peasant said to have died at age 62, allegedly returned to his village and over eight days nine other villagers fell ill and died. Frombald, the Habsburg provisor, accompanied villagers to the exhumation; the body was reported uncorrupted with fresh blood at the mouth, was staked, and burned.",
+        "credibility": { "rating": "low", "factors": ["Single official report", "Body's appearance consistent with normal decomposition processes"], "notes": "One of the cases that introduced the Serbian 'vampir' to Western Europe." },
+        "sources": ["Frombald report (1725)", "Wienerisches Diarium (1725)"],
+        "featured": true
+      },
+      {
+        "id": "upyr-paole-1731",
+        "name": "Arnold Paole case",
+        "date": { "value": "1731-12-01", "precision": "approximate" },
+        "location": {
+          "description": "Village of Medveđa, Habsburg Military Frontier, Serbia",
+          "country": "Serbia (then Habsburg Monarchy)",
+          "region": "Toplica"
+        },
+        "witnesses": { "count": 0, "types": ["Habsburg imperial medical commission (Glaser, Flückinger)", "Local villagers"], "credibility_factors": ["Multiple imperial physicians", "Formal Visum et Repertum report (1732)"] },
+        "description": "Arnold Paole, a hajduk soldier, reportedly fell from a hay-wagon and died around 1726. After his death, villagers blamed him for further deaths and exhumed and burned the body. In 1731 a fresh outbreak in Medveđa prompted Habsburg medical officer Johann Flückinger and colleagues to investigate; their Visum et Repertum (1732) described 12 of 17 exhumed bodies as 'in a vampire condition'.",
+        "credibility": { "rating": "low", "factors": ["Detailed contemporary medical-bureaucratic record", "Findings now understood as ordinary post-mortem changes"], "notes": "The case that set off Western Europe's 'vampire controversy' of the 1730s and gave Calmet his major case study." },
+        "sources": ["Flückinger, J. et al., Visum et Repertum (1732)", "Calmet, A. (1746)"],
+        "featured": true
+      }
+    ],
     "database_path": "./sightings/"
   },
+
   "evidence": {
-    "physical": [],
+    "physical": [
+      {
+        "id": "upyr-evidence-deviant-burials",
+        "type": "archaeological",
+        "name": "Slavic 'deviant' / anti-revenant burials",
+        "description": "Medieval and early modern Slavic graves in Poland, Bulgaria, and surrounding regions showing iron sickles laid across the throat, large stones in the mouth, decapitation, prone burial, or staking with iron nails — practices consistent with anti-upyr folklore.",
+        "status": "verified",
+        "analysis": "Archaeologically attested at sites such as Drawsko (Poland) and Sozopol (Bulgaria); interpreted as material evidence of anti-vampire ritual practice.",
+        "source": "Gregoricka, L.A. et al. (2014), PLOS ONE; Bulgarian National History Museum (Sozopol burial reports)"
+      }
+    ],
     "photographic": [],
     "video": [],
     "audio": [],
-    "trace": []
+    "trace": [],
+    "documentary": [
+      {
+        "id": "upyr-evidence-visum-repertum",
+        "type": "official report",
+        "name": "Visum et Repertum (1732)",
+        "date": "1732-01-26",
+        "description": "Official Habsburg medical commission report on the Arnold Paole case at Medveđa, Serbia.",
+        "status": "verified",
+        "analysis": "Pivotal Enlightenment-era documentary record of the Slavic vampire phenomenon; widely reprinted across Europe.",
+        "source": "Flückinger, J. et al. (1732)"
+      },
+      {
+        "id": "upyr-evidence-1047-colophon",
+        "type": "manuscript",
+        "name": "1047 'Upir' Lichyj' colophon",
+        "date": "1047-01-01",
+        "description": "Old East Slavic colophon to a 'Book of Prophets' identifying its scribe as 'Upir' Lichyj' ('the Wicked Upir').",
+        "status": "verified",
+        "analysis": "Earliest known written attestation of the word 'upir/upyr'.",
+        "source": "Standard Slavic philological literature; Wikipedia: Upiór"
+      }
+    ]
   },
+
   "theories": {
-    "paranormal": [],
+    "paranormal": [
+      {
+        "name": "Genuine revenant",
+        "description": "Within Slavic folk belief, the upyr is a real revenant: the soul of the improperly buried, cursed, or unbaptized dead returning bodily to the world.",
+        "proponents": ["Slavic folk tradition"],
+        "evidence_cited": ["Persistent oral tradition", "Reported attacks on family members during epidemics"]
+      }
+    ],
     "scientific": [],
-    "skeptical": []
+    "skeptical": [
+      {
+        "name": "Misinterpretation of normal decomposition",
+        "description": "Most signs taken as evidence of vampirism — bloating, ruddy color, fresh-looking blood at the mouth, apparent growth of nails and hair — are explained by normal post-mortem changes (gas accumulation, skin retraction, decomposition pooling). Augustin Calmet (1746) and Gerard van Swieten (1755) reached this conclusion in the Enlightenment.",
+        "proponents": ["Augustin Calmet (1746, partly)", "Gerard van Swieten (1755)", "Paul Barber (1988, Vampires, Burial, and Death)"],
+        "evidence_cited": ["Decomposition science", "Visum et Repertum descriptions matching ordinary putrefaction"]
+      },
+      {
+        "name": "Vampire scares track epidemic disease",
+        "description": "Outbreaks of vampire belief tend to cluster with epidemics, particularly tuberculosis and rabies, and with periods of communal stress.",
+        "proponents": ["Paul Barber", "Modern epidemiological folklore studies"],
+        "evidence_cited": ["Correlation of New England 'consumption' vampires (e.g., Mercy Brown, 1892) with TB outbreaks", "Medical commissions noting epidemic context of Habsburg cases"]
+      },
+      {
+        "name": "Premature burial",
+        "description": "Cases of apparent revenance may sometimes have arisen from accidental burial of catatonic or deeply ill persons before death, who awoke in the grave.",
+        "proponents": ["Various 19th- and 20th-century commentators"],
+        "evidence_cited": ["Reports of disturbed coffin interiors in some exhumations"]
+      }
+    ]
   },
+
   "cultural": {
     "folklore": {
-      "traditions": [],
-      "stories": [],
-      "beliefs": "See README.md for cultural context"
+      "traditions": [
+        "East Slavic (Russian, Ukrainian, Belarusian) revenant beliefs",
+        "West Slavic (Polish, Kashubian, Czech) wieszczy / wąpierz beliefs",
+        "South Slavic (Serbian, Bulgarian) vampir beliefs",
+        "Habsburg Military Frontier vampire-investigation tradition"
+      ],
+      "stories": [
+        "Petar Blagojević (1725)",
+        "Arnold Paole (1731–32)",
+        "Mercy Brown (Rhode Island, 1892) — late New England descendant",
+        "Numerous local Polish wieszczy and Russian upyr tales collected by 19th-century folklorists"
+      ],
+      "beliefs": "Anti-upyr practices included burying the dead face-down, placing iron, garlic, or hawthorn in the grave, scattering poppy seeds, sealing the mouth with a brick, decapitation, and burning."
+    },
+    "indigenous": {
+      "cultures": ["Slavic"],
+      "significance": "Upyr beliefs are central to Slavic religious history and to the global cultural history of the vampire.",
+      "sensitivity_note": "Slavic vampire folklore is often filtered in popular media through Anglo-American horror tropes; Slavic-language scholarship and ethnographic collections are essential primary references."
     },
     "popular_culture": {
-      "literature": [],
-      "film_tv": [],
-      "games": [],
-      "other": []
+      "literature": [
+        "Calmet, A. (1746) — Dissertations sur les apparitions des esprits, et sur les vampires",
+        "Polidori, J. W. (1819) — The Vampyre",
+        "Le Fanu, J. S. (1872) — Carmilla",
+        "Stoker, B. (1897) — Dracula",
+        "Tolstoy, A. K. (1839) — Upyr (Russian novella)"
+      ],
+      "film_tv": [
+        "Nosferatu (1922)",
+        "Dracula (Universal, 1931 and many subsequent adaptations)",
+        "Mark of the Vampire (1935)",
+        "Numerous Russian and Polish folk-horror films invoking the upyr"
+      ],
+      "games": [
+        "The Witcher series (Slavic upyr / wampir as recurring monster types)",
+        "Vampire: The Masquerade (vampire roleplaying setting)"
+      ],
+      "music": [],
+      "other": [
+        "Halloween / popular vampire imagery globally"
+      ]
     }
   },
+
   "research": {
-    "researchers": [],
-    "organizations": [],
-    "ongoing_studies": "None documented"
+    "researchers": [
+      { "name": "Augustin Calmet", "affiliation": "Benedictine Order; Abbey of Senones", "contribution": "Dissertations sur les apparitions … et sur les vampires (1746) — first major synthetic study of vampire reports", "period": "1740s" },
+      { "name": "Gerard van Swieten", "affiliation": "Habsburg court physician to Empress Maria Theresa", "contribution": "Naturalistic critique of vampire investigations leading to Habsburg legal reforms (1755)", "period": "1750s" },
+      { "name": "Paul Barber", "affiliation": "Independent / Cotsen Institute of Archaeology, UCLA", "contribution": "Vampires, Burial, and Death (1988) — landmark naturalistic study of Slavic vampire folklore", "period": "1980s–present" },
+      { "name": "Felix J. Oinas", "affiliation": "Indiana University (Slavic and folklore)", "contribution": "Studies of East Slavic vampire and revenant beliefs", "period": "1970s–1980s" }
+    ],
+    "organizations": [
+      { "name": "Slavic and East European Folklore Association", "url": "https://seefa.org", "focus": "Scholarship on Slavic folklore including upyr traditions" }
+    ],
+    "ongoing_studies": "Active scholarship in Slavic philology, folklore studies, historical archaeology of deviant burials, and epidemic-disease history."
   },
-  "sources": []
+
+  "sources": [
+    {
+      "id": "wiki-upior",
+      "type": "website",
+      "title": "Upiór",
+      "publication": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Upi%C3%B3r",
+      "accessed": "2026-05-07"
+    },
+    {
+      "id": "wiki-vampire-folklore-by-region",
+      "type": "website",
+      "title": "Vampire folklore by region",
+      "publication": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Vampire_folklore_by_region",
+      "accessed": "2026-05-07"
+    },
+    {
+      "id": "barber-1988",
+      "type": "book",
+      "title": "Vampires, Burial, and Death: Folklore and Reality",
+      "authors": ["Paul Barber"],
+      "publication": "Yale University Press",
+      "date": "1988",
+      "isbn": "978-0300048599"
+    },
+    {
+      "id": "calmet-1746",
+      "type": "book",
+      "title": "Dissertations sur les apparitions des esprits, et sur les vampires ou les revenans de Hongrie, de Moravie, &c.",
+      "authors": ["Augustin Calmet"],
+      "publication": "De Bure l'aîné",
+      "date": "1746"
+    },
+    {
+      "id": "fluckinger-1732",
+      "type": "archive",
+      "title": "Visum et Repertum",
+      "authors": ["Johann Flückinger"],
+      "date": "1732",
+      "notes": "Habsburg medical commission report on the Arnold Paole case in Medveđa, Serbia."
+    },
+    {
+      "id": "gregoricka-2014",
+      "type": "paper",
+      "title": "Apotropaic Practices and the Undead: A Biogeochemical Assessment of Deviant Burials in Post-Medieval Poland",
+      "authors": ["Lesley A. Gregoricka", "Tracy K. Betsinger", "Amy B. Scott", "Marek Polcyn"],
+      "publication": "PLOS ONE",
+      "date": "2014",
+      "doi": "10.1371/journal.pone.0113564"
+    }
+  ]
 }
